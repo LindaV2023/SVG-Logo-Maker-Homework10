@@ -2,27 +2,44 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const questions = require('./lib/questions.js');
 const fileName = "./examples/logo.svg";
-
-
+const SVG = require('./lib/svg');
 const {Circle, Square, Triangle} = require ("./lib/shapes");
 
 function init(){
     inquirer.prompt(questions) 
-    .then(function(userFill){
-        console.log(userFill);
-    //    writeToFile("logo.svg")
+    .then(function(userAnswers){
+     let shape;
+     switch (userAnswers){
+        case "Circle": 
+            shape = new Circle;
+            break;
+        
+        case "Square":
+            shape = new Square;
+            break;
+
+        case "Triangle":
+            shape = new Triangle;
+            break;
+     }
+
+     shape.setColor(userAnswers.shapeColor)
+
+     let svg = new SVG
+     svg.setShape(shape.render())
+
+     svg.setText(userAnswers.text)
+     svg.setTextColor(userAnswers.textColor)
+
+   writeToFile(fileName, svg.render())
     }
 
 )};
 ;
-function writeToFile(fileName, answers) {
-    let svgString="";
-    svgString =
-    '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
-//Adds text tag to front of shape
-    svgString =+"<g>";
-//Inserts user input   
-    svgString += `${answers.myShape}`;
+function writeToFile(fileName, data) {
+fs.writeFile(fileName, data,(error, data) =>{
+    error ? console.log (error) : console.log ("svg file created")
+} )
 }
 
 init()
