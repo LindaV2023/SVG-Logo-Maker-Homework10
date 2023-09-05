@@ -2,15 +2,15 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const questions = require('./lib/questions.js');
 const fileName = "./examples/logo.svg";
-//const setShape = require('./lib/setShape.js');
-const setShape = require('./lib/shapes.js');
-const {circle, square, triangle} = require ("./lib/shapes");
+
+
+const {Circle, Square, Triangle} = require ("./lib/shapes");
 
 function init(){
     inquirer.prompt(questions) 
     .then(function(userFill){
         console.log(userFill);
-        writeToFile("logo.svg")
+    //    writeToFile("logo.svg")
     }
 
 )};
@@ -24,3 +24,5 @@ function writeToFile(fileName, answers) {
 //Inserts user input   
     svgString += `${answers.myShape}`;
 }
+
+init()

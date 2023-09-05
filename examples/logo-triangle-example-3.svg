@@ -3,6 +3,3 @@
   <polygon points="100, 20 225, 225 0, 225" fill="purple"/>
   <text x="100" y="175" font-size="60" text-anchor="middle" fill="white">SVG</text>
  </svg>
-
-
-
