@@ -9,7 +9,7 @@ function init(){
     inquirer.prompt(questions) 
     .then(function(userAnswers){
      let shape;
-     switch (userAnswers){
+     switch (userAnswers.shape){
         case "Circle": 
             shape = new Circle;
             break;
