@@ -45,6 +45,9 @@ In order to run this application you must have the following installed: VS code,
 link to video: 
 https://drive.google.com/file/d/153_0WOF9cpA83bpsi-OYaDoQCWUFw4ev/view
 
+
+Images from application:
+
 ![image](https://github.com/LindaV2023/SVG-Logo-Maker-Homework10/assets/127782990/6b2cbf1d-7894-41c3-8a58-49d99e2342de)
 ![image](https://github.com/LindaV2023/SVG-Logo-Maker-Homework10/assets/127782990/f0e0b03e-9a78-42c0-b3d8-00a1c20909a9)
 ![image](https://github.com/LindaV2023/SVG-Logo-Maker-Homework10/assets/127782990/c336014f-5c14-4f8b-b911-c24b7bb89d80)
