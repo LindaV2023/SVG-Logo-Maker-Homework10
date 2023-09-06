@@ -42,6 +42,13 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 In order to run this application you must have the following installed: VS code, node, Jest amd npm
 
 ## Links
+link to video: 
+
+![image](https://github.com/LindaV2023/SVG-Logo-Maker-Homework10/assets/127782990/6b2cbf1d-7894-41c3-8a58-49d99e2342de)
+![image](https://github.com/LindaV2023/SVG-Logo-Maker-Homework10/assets/127782990/f0e0b03e-9a78-42c0-b3d8-00a1c20909a9)
+![image](https://github.com/LindaV2023/SVG-Logo-Maker-Homework10/assets/127782990/c336014f-5c14-4f8b-b911-c24b7bb89d80)
+
+
 
 
 ## Usage
